@@ -1,0 +1,31 @@
+﻿<Window x:Class="AsliPehlivan_HW5.ChangePass"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsliPehlivan_HW5"
+        mc:Ignorable="d"
+        Title="ChangePass" Height="200" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="Eski Şifre" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0"></TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="1" Text="Yeni Şifre" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0"></TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2" Text="Yeni Şifre Tekrar" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0"></TextBlock>
+        <PasswordBox Grid.Column="1" Grid.Row="0" Margin="5,5,5,5" Name="oldpass"></PasswordBox>
+        <PasswordBox Grid.Column="1" Grid.Row="1" Margin="5,5,5,5" Name="newpass"></PasswordBox>
+        <PasswordBox Grid.Column="1" Grid.Row="2" Margin="5,5,5,5" Name="newpassagain"></PasswordBox>
+        <Button Grid.Row="3" Grid.Column="1" Click="Button_Click" Content="Şifreyi Güncelle" FontWeight="Bold" FontSize="14" Background="#FF3177B2" Margin="0,10,6,5"/>
+
+
+    </Grid>
+</Window>
